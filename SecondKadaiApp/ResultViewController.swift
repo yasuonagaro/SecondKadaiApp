@@ -9,10 +9,13 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var output_label: UILabel!
+    var textInput: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        output_label.text = "こんにちは、\(textInput)さん"
     }
     
 
